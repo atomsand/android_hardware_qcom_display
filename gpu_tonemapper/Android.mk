@@ -21,4 +21,6 @@ LOCAL_SRC_FILES           := TonemapFactory.cpp \
                              EGLImageWrapper.cpp \
                              Tonemapper.cpp
 
+LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps) $(kernel_deps)
+
 include $(BUILD_SHARED_LIBRARY)
